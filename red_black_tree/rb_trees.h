@@ -42,5 +42,8 @@ rb_tree_t *rb_tree_node(rb_tree_t *parent, int value, rb_color_t color);
 /* Red-Black _ Is Red-Black */
 size_t max_size(size_t a, size_t b);
 size_t RBT_check_black_height(const rb_tree_t *tree);
+int RBT_check_colors(const rb_tree_t *tree);
+int BST_check(const rb_tree_t *tree,int *prev);
+int rb_tree_is_valid(const rb_tree_t *tree);
 
 #endif /* _RB_TREES_H_ */
