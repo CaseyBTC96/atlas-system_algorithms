@@ -39,4 +39,8 @@ typedef struct rb_tree_s
 /* 0. Red-Black - New node */
 rb_tree_t *rb_tree_node(rb_tree_t *parent, int value, rb_color_t color);
 
+/* Red-Black _ Is Red-Black */
+size_t max_size(size_t a, size_t b);
+size_t RBT_check_black_height(const rb_tree_t *tree);
+
 #endif /* _RB_TREES_H_ */
