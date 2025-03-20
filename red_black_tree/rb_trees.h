@@ -46,4 +46,7 @@ int RBT_check_colors(const rb_tree_t *tree);
 int BST_check(const rb_tree_t *tree,int *prev);
 int rb_tree_is_valid(const rb_tree_t *tree);
 
+/* 2. Red-Black - Insert */
+rb_tree_t *rb_tree_get_uncle(rb_tree_t *n);
+
 #endif /* _RB_TREES_H_ */
