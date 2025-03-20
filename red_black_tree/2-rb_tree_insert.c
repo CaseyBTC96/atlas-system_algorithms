@@ -204,7 +204,7 @@ rb_tree_t *rb_tree_insert_recurse(rb_tree_t *tree, int value)
 
 	if (tree)
 	{
-		if (tree->n = value)
+		if (tree->n > value)
 		{
 			if (tree->left == NULL)
 			{
