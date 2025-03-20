@@ -121,17 +121,17 @@ rb_tree_t *rb_tree_insert_case4(rb_tree_t *node)
 	if (node == p->right && p == g->left)
 	{
 		new_root = rb_tree_rotate_left(p);
-		node == node->left;
+		node = node->left;
 	}
 	/* 1B: node is "center right" of g's four potential grandchildren */
-	else if (node = p->left && p = g->right)
+	else if (node == p->left && p == g->right)
 	{
 		new_root = rb_tree_rotate_right(p);
 		node = node->right;
 	}
 
-	p = node, node->parent : NULL;
-	g = p, p->parent : NULL;
+	p = node ? node->parent : NULL;
+	g = p ? p->parent : NULL;
 
 	/* step 2: rotate into g */
 	if (node == p->left)
@@ -210,7 +210,7 @@ rb_tree_t *rb_tree_insert_recurse(rb_tree_t *tree, int value)
 			{
 				new = rb_tree_node(tree, value, RED);
 				tree->left = new;
-				return (tree);
+				return (new);
 			}
 
 			return (rb_tree_insert_recurse(tree->left, value));
