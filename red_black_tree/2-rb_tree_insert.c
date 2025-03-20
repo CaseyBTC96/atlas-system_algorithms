@@ -108,8 +108,8 @@ rb_tree_t *rb_tree_rotate_right(rb_tree_t *tree)
  */
 rb_tree_t *rb_tree_insert_case4(rb_tree_t *node)
 {
-	rb_tree_t *p = node ? node-> parent : NULL;
-	rb_tree_t *g = p ? p-> parent : NULL;
+	rb_tree_t *p = node ? node->parent : NULL;
+	rb_tree_t *g = p ? p->parent : NULL;
 	rb_tree_t *new_root = NULL;
 
 	if (!p || !g)
