@@ -62,3 +62,5 @@ typedef struct a_star_vertex_s
 /* 0-backtracking_array.c */
 queue_t *backtracking_array(char **map, int rows, int cols,
 			    point_t const *start, point_t const *target);
+
+#endif /* PATHFINDING_H */
